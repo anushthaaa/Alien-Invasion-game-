@@ -10,5 +10,8 @@ class Settings():
         self.screen_height = 600
         self.bg_color = (30,0,60)
 
+        # ship settings
+        self.ship_speed_factor = 1.5
+
 
         

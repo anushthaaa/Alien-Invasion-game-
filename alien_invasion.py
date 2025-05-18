@@ -12,17 +12,16 @@ def run_game():
     screen = pygame.display.set_mode((cus_settings.screen_height, cus_settings.screen_width))
     pygame.display.set_caption("ALIEN INVASION")
 
-    ship = Ship(screen)
+    ship = Ship(cus_settings, screen)
 
     while True:
         gf.check_events(ship)
         ship.update()
         gf.update_screen(cus_settings, screen, ship)
 
-        # make the most recently drawn screen visible
-        pygame.display.flip()
-    
-run_game()
+
+if __name__ == "__main__" :   
+    run_game()
 
 
 
